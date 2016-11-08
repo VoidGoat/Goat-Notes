@@ -22,19 +22,22 @@
   <script src="js/helper.js"></script>
 </head>
 <body>
-  <nav class="nav">
+  <header class="nav">
         <a href="#" class="nav-header">Goat Notes</a>
         <hr style="margin: 0;" />
-  </nav>
+  </header>
+  <header>
+    <button class="menu-button" id="menu-button" onclick="menu_button_clicked()"><img src="images/menu.svg" alt="menu" width="30px" height="30px" /></button>
+  </header>
 
   <div class="max-height">
-    <div class="note">
-      <textarea id="note" class="note-area" rows="10" cols="50">notes go here</textarea>
+    <div id="note" class="note">
+      <textarea id="note-text" class="note-area" rows="10" cols="50">notes go here</textarea>
     </div>
+
     <nav id="note-list" class="note-list">
 
       <input class="search-box" type="text" name="firstname" placeholder="Seach Notes (Does not work)" autocomplete="off">
-      <!-- <button class="note-list-item" id="listitem%idnum%" onclick="reply_click(this.id)"><h1 class="item-header">%header%</h1> <span class="item-subheader">%subheader%</span></button> -->
 
     </nav>
   </div>

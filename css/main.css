@@ -165,14 +165,52 @@ body {
   border: 2px solid rgb(175, 189, 208);
   outline:none;
 }
+.menu-button {
+  background-color: white;
+  border: none;
+}
+.menu-button:focus {
+  outline: none;
+}
 
+.sidebar {
+  height:100%;
+  width: 40%;
+  position: absolute;
+  opacity: 0.5;
+  background-color: black;
+  z-index: 1;
+
+}
+.slide-on {
+  animation-name: slide-on-note-list;
+  animation-duration: 0.7s;
+}
+.offscreen {
+  margin-left: -50%;
+}
+.note-fill-screen {
+  width: 100%;
+}
+.reverse-animation {
+  animation-direction: reverse;
+}
+.scale-note {
+  animation-name: scale-note;
+  animation-duration: 0.7s;
+}
 @keyframes fadein-opacity {
   from { opacity: 0}
   to   { opacity: 1}
 }
-@keyframes fadein-location {
-  from { margin-left: -50%}
-  to   { margin-left: 2.5%}
+@keyframes slide-on-note-list {
+  0% { margin-left: -50%}
+  50%   { margin-left: 0}
+  100%   { margin-left: 0}
+}
+@keyframes scale-note {
+  0% {width: 50%}
+  100%   {width : 100%}
 }
 
 @keyframes spin {

@@ -1,5 +1,5 @@
 
-var HTMLnoteListItem = '<button class="note-list-item" id="listitem%idnum%" onclick="reply_click(this.id)"><h1 class="item-header">%header%</h1> <span class="item-subheader">%subheader%</span></button>';
+var HTMLnoteListItem = '<button class="note-list-item" id="listitem%idnum%" onclick="list_click(this.id)"><h1 class="item-header">%header%</h1> <span class="item-subheader">%subheader%</span></button>';
 
 
 var kToF = function(kelvin) {
