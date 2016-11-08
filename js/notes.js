@@ -1,9 +1,10 @@
 
 var notes = {
   "notes": [
-    "Hey \n I love this note!",
-    "This is the text note \n haha",
-    "More notes wow! \n this is a neat webpage"
+    "Hey \nI love this note!",
+    "This is the text note \nhaha",
+    "More notes wow! \nthis is a neat webpage",
+    "-Kanji \n-Algorithmic Thinking \n-Read japanese \n-English pick topic \n-Annotated Bibliography"
   ],
   "display" : function(){
     for ( var i = 0; i < notes.notes.length; i++ ) {
