@@ -3,7 +3,20 @@ var notes = {
   "notes": [
     "Hey \nI love this note!",
     "This is the text note \nhaha",
-    "More notes wow! \nthis is a neat webpage"
+    "More notes wow! \nthis is a neat webpage",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
   ],
   "display" : function(){
     for ( var i = 0; i < notes.notes.length; i++ ) {
@@ -51,7 +64,7 @@ var removeList = function() {
 };
 var addList = function() {
   var scale = 0;
-  var id = setInterval(frame, 5);
+  var id = setInterval(frame, 1);
   function frame() {
     if (scale === 100) {
       movingList = false;
@@ -63,6 +76,10 @@ var addList = function() {
     }
   }
 };
+
+var toggleList = function() {
+
+}
 
 function menu_button_clicked() {
   if ( movingList === false ) {

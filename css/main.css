@@ -80,13 +80,13 @@ body {
 }
 
 .max-height {
-  height: 95.5%;
+  height: 90%;
   padding: 0;
   margin: 0;
 }
 .note {
   width: 50%;
-  height: 99%;
+  height: 100%;
   margin: 0;
   padding: 0;
   float: right;
@@ -109,6 +109,7 @@ body {
   width:50%;
   height: inherit;
   float:left;
+  overflow-y:scroll;
 }
 .note-list-item {
   width: 100%;
