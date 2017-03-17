@@ -18,6 +18,33 @@
   <link rel="apple-touch-icon" sizes="114x114" href="images/goatnotes-114x114.png" />
   <link rel="apple-touch-icon" sizes="144x144" href="images/goatnotes-144x144.png" />
 
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-storage.js"></script>
+
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAkslSVd65RFJwgl0q7PbHbG5h2n-WXy9E",
+    authDomain: "goat-notes.firebaseapp.com",
+    databaseURL: "https://goat-notes.firebaseio.com",
+    storageBucket: "goat-notes.appspot.com",
+    messagingSenderId: "248763776609"
+  };
+  firebase.initializeApp(config);
+  var storage = firebase.storage();
+  var storageRef = storage.ref();
+
+  var stringRef = storageRef.child("string")
+
+  var message = 'This is my message.';
+
+  stringRef.putString(message).then(function(snapshot) {
+    console.log('Uploaded a raw string!');
+  });
+  </script>
+
   <script src="js/jQuery.js"></script>
   <script src="js/helper.js"></script>
 </head>

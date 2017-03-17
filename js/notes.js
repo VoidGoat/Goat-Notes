@@ -79,7 +79,7 @@ var addList = function() {
 
 var toggleList = function() {
 
-}
+};
 
 function menu_button_clicked() {
   if ( movingList === false ) {
